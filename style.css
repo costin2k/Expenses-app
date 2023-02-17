@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgb(228, 226, 226);
+    font-family: "Poppings", sans-serif;
+}
+
+
+.outer-container {
+    width: 90%;
+    font-size: 1rem;
+    max-width: 43.75em;
+    margin: 1em auto;
+}
+
+.container {
+    width: 100%;
+}
+
+.sub-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+}
+
+.outer-container h3 {
+    color: #363d55;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+.container input {
+    display: block;
+    width: 100%;
+    padding: 0.6em 0.3em;
+    border: 1px solid #d0d0d0;
+    color: black;
+    outline: none;
+    font-weight: 400;
+    border-radius: .3em;
+
+}
+
+.container input:focus {
+    border-color: red;
+}
+
+.total-amount,
+.user-amount-container {
+    background-color: rgb(255, 255, 255);
+    padding: 1.25em .9em;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgb(161, 161, 161);
+}
+
+
+.output-container {
+    background-color: rgb(179, 179, 226);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    border-radius: 0.3em;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 2em 0;
+    padding: 1.2em;
+}
+
+.output-container p {
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+.output-container span {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+}
+
+.submit {
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(179, 179, 226);
+    outline: none;
+    color: #fff;
+    border-radius: .3em;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+#set-budget {
+    margin-top: 4em;
+}
+
+.list {
+    background-color: #fff;
+    padding: 2em 1.2em;
+    border-radius: .3em;
+    box-shadow: 0 0.6em 1.2em rgb(161, 161, 161);
+}
+
+.sublist-content {
+    display: flex;
+    width: 100%;
+    border-left: 0.3em solid #587ef4;
+    margin-bottom: 0.6em;
+    padding: 0.5em 0;
+}
+
+.product {
+    font-weight: 500;
+    margin-left: 1.5em;
+    color: #363d55;
+}
+
+.amount {
+    color: #363d55;
+    margin-left: 20%;
+}
+
+.icons-container {
+    width: 5em;
+    margin: 1.2em;
+    align-items: center;
+}
+
+.product-title {
+    margin-bottom: 1em;
+}
+
+
+.hide {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+
+.edit {
+    margin-left: auto;
+}
+
+.edit,
+.delete {
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: #587ef4;
+}
+
+
+@media screen and (max-width: 600px) {
+    .outer-container {
+        font-size: 14px;
+    }
+
+    .sub-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

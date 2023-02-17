@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Remix Link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="outer-container">
+        <div class="container">
+            <div class="sub-container">
+                <!-- Budget -->
+                <div class="total-amount">
+                    <h3>Budget</h3>
+                    <p class="hide error" id="budget-error">
+                        Value cannot be empty or negative
+                    </p>
+                    <input type="number" id="total-amount" placeholder="Enter Total Amount">
+                    <button class="submit" id="set-budget">Set Budget</button>
+                </div>
+
+                <!-- Expenditure -->
+                <div class="user-amount-container">
+                    <h3>Expenses</h3>
+                    <p class="hide error" id="product-title-error">Values cannot be empty</p>
+                    <input type="text" class="product-title" placeholder="Enter Title of Product">
+                    <input type="number" id="user-amount" placeholder="Enter Cost of Product">
+                    <button class="submit" id="check-amount">Check Amount</button>
+                </div>
+            </div>
+
+            <!-- Output -->
+            <div class="output-container flex-space">
+                <div>
+                    <p>Total Budget</p>
+                    <span id="amount">0</span>
+                </div>
+
+                <div>
+                    <p>Expenses</p>
+                    <span id="expenditure-value">0</span>
+                </div>
+
+                <div>
+                    <p>Balance</p>
+                    <span id="balance-amount">0</span>
+                </div>
+            </div>
+        </div>
+        <!-- List -->
+        <div class="list">
+            <h3>Expense List</h3>
+            <div class="list-container" id="list"></div>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
